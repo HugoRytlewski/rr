@@ -51,24 +51,22 @@ function setTheme(theme) {
   document.body.classList.add(theme);
 
   if (theme == "dark-mode" && window.innerWidth <= 992) {
-    document.getElementById("carte").src =
-      "../3iL/publice/img/cartemobilenuit.png";
+    document.getElementById("carte").src = "../publice/img/cartemobilenuit.png";
     document.getElementById("mobilenuit").style.display = "block"; // Pour afficher l'élément
     document.getElementById("mobilejour").style.display = "none"; // Pour masquer l'élément
   } else {
-    document.getElementById("carte").src = "../3iL/publice/img/cartemobile.png";
+    document.getElementById("carte").src = "../publice/img/cartemobile.png";
     document.getElementById("mobilenuit").style.display = "none"; // Pour masquer l'élément
     document.getElementById("mobilejour").style.display = "block"; // Pour afficher l'élément
   }
   if (theme == "dark-mode" && window.innerWidth >= 992) {
     document.getElementById("pcnuit").style.display = "block"; // Pour afficher l'élément
     document.getElementById("pcjour").style.display = "none"; // Pour masquer l'élément
-    document.getElementById("carte2").src =
-      "../3iL/publice/img/cartepcnuit.jpg";
+    document.getElementById("carte2").src = "../publice/img/cartepcnuit.jpg";
   } else {
     document.getElementById("pcnuit").style.display = "none"; // Pour masquer l'élément
     document.getElementById("pcjour").style.display = "block"; // Pour afficher l'élément
-    document.getElementById("carte2").src = "../3iL/publice/img/cartepc.jpg";
+    document.getElementById("carte2").src = "../publice/img/cartepc.jpg";
   }
 }
 const trees = document.getElementsByClassName("trees");
