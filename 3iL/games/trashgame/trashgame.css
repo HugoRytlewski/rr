@@ -1,3 +1,6 @@
+@import url("../../global.css");
+
+
 #game-container {
   width: 400px;
   height: 400px;
@@ -12,7 +15,7 @@
 #character {
   width: 80px;
   height: 80px;
-
+  
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -20,14 +23,21 @@
 }
 .item {
   width: 60px;
-  height: 60px;
+  height: 60px; 
   background-size: cover;
   position: absolute;
+  
 }
 .dangerous {
   width: 60px;
   height: 60px;
-  background-image: url("../../publice/img/garot.svg");
+  background-image: url('../../ressources/img/garot.svg');
   background-size: cover;
   position: absolute;
+}
+.divBtn{
+  display: block;
+  position: fixed;
+  top: 2rem;
+  left: 5rem;
 }

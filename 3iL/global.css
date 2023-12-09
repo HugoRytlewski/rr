@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @font-face {
   font-family: "Dyslexie";
-  src: url("./publice/fonts/OpenDyslexic-Regular.otf") format("opentype");
+  src: url("./ressources/fonts/OpenDyslexic-Regular.otf") format("opentype");
 }
 
 :root {
@@ -18,10 +18,12 @@ a {
   text-decoration: none;
   color: var(--clr-fontcolor);
 }
+
 .default {
   --fnt-font-title: "Archivo Black", sans-serif;
   --fnt-font-contenu: "Archivo Black", sans-serif;
 }
+
 .protonopia {
   --clr-primary: #7a6e3d; /* Equivalent au clr-light-primary pour la protanopie */
   --clr-bgcolor: #fbebbd; /* Equivalent au clr-light-secondary pour la protanopie */
@@ -61,4 +63,18 @@ a {
 .dyslexia {
   --fnt-font-contenu: "Dyslexie", sans-serif;
   --fnt-font-title: "Dyslexie", sans-serif;
+}
+
+.boutonRetour{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 20%;
+  border-radius: 10px;
+  background-color: var(--clr-bgcolor);
+  font-family: var(--fnt-font-contenu);
+  display: flex;
+  justify-content: center;
+  font-size: 110%;
 }
